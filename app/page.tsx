@@ -54,12 +54,12 @@ export default function Home() {
 
       <main className="relative">
         {/* Hero Section - Asymmetric, Bold Layout with Parallax */}
-        <section ref={heroRef} className="pt-20 sm:pt-24 md:pt-32 pb-16 sm:pb-24 md:pb-32 px-4 sm:px-6 md:px-8 relative overflow-hidden min-h-screen flex items-center">
+        <section ref={heroRef} className="pt-20 sm:pt-28 md:pt-32 pb-16 sm:pb-24 md:pb-32 px-4 sm:px-6 md:px-8 relative overflow-hidden min-h-screen flex items-center">
           <motion.div
             style={{ y: heroY, opacity: heroOpacity }}
             className="max-w-[1400px] mx-auto w-full"
           >
-            <div className="grid lg:grid-cols-12 gap-8 md:gap-12 lg:gap-16 items-center">
+            <div className="grid lg:grid-cols-12 gap-8 sm:gap-12 lg:gap-16 items-center">
               {/* Left: Headline & CTA */}
               <div className="lg:col-span-7 space-y-6 sm:space-y-8 md:space-y-10">
                 {/* Headline - Bold Statement with stagger */}
@@ -102,11 +102,11 @@ export default function Home() {
                   transition={{ duration: 0.8, delay: 0.55 }}
                   className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4"
                 >
-                  <MagneticButton className="bg-black text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full flex items-center justify-center gap-2 hover:bg-gray-800 transition-colors group shadow-lg shadow-black/10 text-sm sm:text-base">
+                  <MagneticButton className="bg-black text-white px-6 sm:px-8 py-3.5 sm:py-4 rounded-full flex items-center justify-center gap-2 hover:bg-gray-800 transition-colors group shadow-lg shadow-black/10 text-sm sm:text-base">
                     <span>Start Your Project</span>
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </MagneticButton>
-                  <MagneticButton className="text-gray-600 hover:text-gray-900 px-5 sm:px-6 py-3 sm:py-4 transition-colors font-mono border border-gray-200 rounded-full hover:border-gray-300 text-sm sm:text-base text-center">
+                  <MagneticButton className="text-gray-600 hover:text-gray-900 px-5 sm:px-6 py-3.5 sm:py-4 transition-colors font-mono border border-gray-200 rounded-full hover:border-gray-300 text-sm sm:text-base text-center">
                     View_Our_Work →
                   </MagneticButton>
                 </motion.div>
@@ -158,7 +158,7 @@ export default function Home() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.5, duration: 1 }}
-            className="absolute bottom-6 sm:bottom-12 left-1/2 -translate-x-1/2 hidden md:block"
+            className="absolute bottom-8 sm:bottom-12 left-1/2 -translate-x-1/2 hidden sm:block"
           >
             <motion.div
               animate={{ y: [0, 8, 0] }}
@@ -172,10 +172,10 @@ export default function Home() {
         </section>
 
         {/* Bento Grid Features Section */}
-        <section className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 md:px-8 bg-gray-50/50 relative">
+        <section className="py-16 sm:py-20 md:py-24 px-4 sm:px-6 md:px-8 bg-gray-50/50 relative">
           <div className="max-w-[1400px] mx-auto">
             <ParallaxText offset={30}>
-              <div className="mb-8 sm:mb-12 md:mb-16 space-y-3 sm:space-y-4">
+              <div className="mb-10 sm:mb-14 md:mb-16 space-y-3 sm:space-y-4">
                 <motion.span
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -210,7 +210,7 @@ export default function Home() {
         {/* Services Section - Enhanced */}
         <section className="py-16 sm:py-24 md:py-32 px-4 sm:px-6 md:px-8">
           <div className="max-w-[1400px] mx-auto">
-            <div className="grid lg:grid-cols-12 gap-8 md:gap-12 lg:gap-16">
+            <div className="grid lg:grid-cols-12 gap-8 sm:gap-12 lg:gap-16">
               {/* Section Label */}
               <div className="lg:col-span-4">
                 <div className="lg:sticky lg:top-32 space-y-4 sm:space-y-6 mb-8 lg:mb-0">
@@ -262,9 +262,9 @@ export default function Home() {
                     <FloatingCard className="py-6 sm:py-8 px-4 sm:px-6 -mx-4 sm:-mx-6 hover:bg-white transition-colors cursor-pointer">
                       <div className="flex items-start justify-between gap-4 sm:gap-8">
                         <div className="space-y-2 sm:space-y-3 flex-1">
-                          <div className="flex items-center gap-3 sm:gap-4">
+                          <div className="flex items-start sm:items-center gap-3 sm:gap-4">
                             <motion.span
-                              className="font-mono text-xs sm:text-sm text-gray-400 group-hover:text-purple-600 transition-colors"
+                              className="font-mono text-xs sm:text-sm text-gray-400 group-hover:text-purple-600 transition-colors mt-0.5 sm:mt-0"
                               whileHover={{ scale: 1.1 }}
                             >
                               {service.num}
@@ -291,7 +291,7 @@ export default function Home() {
         {/* Process Section - Vertical Timeline */}
         <section className="py-16 sm:py-24 md:py-32 px-4 sm:px-6 md:px-8 bg-gray-50/50">
           <div className="max-w-[1400px] mx-auto">
-            <div className="grid lg:grid-cols-12 gap-8 md:gap-12 lg:gap-16">
+            <div className="grid lg:grid-cols-12 gap-8 sm:gap-12 lg:gap-16">
               {/* Section Header */}
               <div className="lg:col-span-4">
                 <div className="lg:sticky lg:top-32 space-y-4 sm:space-y-6 mb-8 lg:mb-0">
@@ -331,7 +331,7 @@ export default function Home() {
         {/* Testimonials Section */}
         <section className="py-16 sm:py-24 md:py-32 px-4 sm:px-6 md:px-8">
           <div className="max-w-[1400px] mx-auto">
-            <div className="grid lg:grid-cols-12 gap-8 md:gap-12 lg:gap-16">
+            <div className="grid lg:grid-cols-12 gap-8 sm:gap-12 lg:gap-16">
               <div className="lg:col-span-4 mb-8 lg:mb-0">
                 <ParallaxText offset={20}>
                   <span className="font-mono text-xs sm:text-sm text-gray-400 uppercase tracking-wider">
@@ -385,17 +385,17 @@ export default function Home() {
                 </span>
               </motion.div>
 
-              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white max-w-3xl mx-auto px-4">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white max-w-3xl mx-auto px-2">
                 Ready to Build the Next Generation of Web3?
               </h2>
               
-              <p className="text-gray-400 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed px-4">
+              <p className="text-gray-400 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed px-2">
                 Let's discuss your project and explore how we can bring your
                 Web3 vision to life. Book a free 30-minute strategy call.
               </p>
 
               <div className="flex items-center justify-center gap-4 pt-2 sm:pt-4">
-                <MagneticButton className="bg-white text-black px-6 sm:px-8 py-3 sm:py-4 rounded-full hover:bg-gray-100 transition-colors inline-flex items-center gap-2 group shadow-2xl shadow-white/20 text-sm sm:text-base">
+                <MagneticButton className="bg-white text-black px-6 sm:px-8 py-3.5 sm:py-4 rounded-full hover:bg-gray-100 transition-colors inline-flex items-center gap-2 group shadow-2xl shadow-white/20 text-sm sm:text-base">
                   <span>Book a Strategy Call</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </MagneticButton>
