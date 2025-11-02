@@ -6,6 +6,11 @@ export const metadata: Metadata = {
   description: "We partner with ambitious teams to build exceptional Web3 experiences. From concept to launch, we bring your vision to life.",
   keywords: ["Web3", "blockchain", "smart contracts", "dApp development", "NFT platform", "DAO", "tokenomics"],
   authors: [{ name: "thirdweb.academy" }],
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
   openGraph: {
     title: "thirdweb.academy | Building the Future of Web3",
     description: "We partner with ambitious teams to build exceptional Web3 experiences. From concept to launch, we bring your vision to life.",
